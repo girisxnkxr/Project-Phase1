@@ -1,0 +1,84 @@
+body {
+    background-color: rgb(15, 15, 15);
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgb(44, 44, 44);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #bb86fc;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.profile-img {
+    width: 150px;
+    border-radius: 50%;
+    display: block;
+    margin: 20px auto;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.project {
+    background-color:rgb(44, 44, 44);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.project img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(44, 44, 44);
+}
+
+.social-icons img {
+    width: 30px;
+    margin: 0 10px;
+}
+
+p {
+    margin-left: 1cm;
+}
+
+h2{
+    margin-left: 1cm;
+}
