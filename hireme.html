@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hi! there - Hire Me</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="hireme-page">
+  <div class="form-container">
+    <h2>Hi! there</h2>
+    <form action="/submit-your-form-handler" method="post">
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" pattern="[0-9]{10,}" title="Please enter a valid phone number (at least 10 digits)" required>
+
+      <label for="career">Your Current Role / Career Interest:</label>
+      <input type="text" id="career" name="career" required>
+
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+</body>
+</html>

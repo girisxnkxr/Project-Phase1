@@ -1,0 +1,508 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+a {
+    color: #047bd0;
+    text-decoration: none;
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 2rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+nav ul li {
+    margin: 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    font-weight: bold;
+    position: relative;
+    padding-bottom: 4px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #00bfff;
+}
+
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: #00bfff;
+    transition: width 0.3s ease;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+.section {
+    padding: 100px 0;
+    animation: fadeIn 1s ease forwards;
+}
+
+.section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.about-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.profile-pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.about-text {
+    flex: 1;
+    min-width: 250px;
+}
+
+.about-text p {
+    margin-bottom: 15px;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #00bcd4;
+    color: #121212;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    margin-top: 10px;
+    transition: background-color 0.3s, transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 119, 204, 0.2);
+    border: none;
+}
+
+.btn:hover {
+    background-color: #4dd0e1;
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 119, 204, 0.3);
+}
+
+footer {
+    background: #222;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+footer #contact a {
+    font-weight: bold;
+    color: #00bfff;
+}
+footer #contact a:hover {
+    color: #fff;
+}
+
+
+.social-icons img {
+    width: 30px;
+    margin: 0 10px;
+    vertical-align: middle;
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+    .section h2 {
+        font-size: 1.5rem;
+    }
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav ul li {
+        margin: 8px 0;
+    }
+    .about-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .profile-pic {
+        width: 150px;
+        height: 150px;
+        margin-bottom: 15px;
+    }
+}
+
+body.profile-page {
+  background-color:rgb(18, 17, 17);
+  color: #e0e0e0;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+.profile-page .container {
+  max-width: 800px;
+  margin: auto;
+  opacity: 1;
+  transform: translateY(0);
+  animation: none;
+}
+
+.profile-page header {
+  text-align: center;
+  margin-bottom: 40px;
+  background: transparent;
+  color: inherit;
+  padding: 0;
+}
+.profile-page header h1 {
+    font-size: 2.2em;
+    margin-bottom: 0.2em;
+}
+
+.profile-page .highlight {
+  color: #00bcd4;
+}
+
+.profile-page .subtitle {
+  color: #aaa;
+  font-size: 1.1em;
+}
+
+.profile-page section {
+  margin-bottom: 30px;
+  padding: 0;
+  animation: none;
+}
+
+.profile-page section h2 {
+  border-bottom: 2px solid #00bcd4;
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+  text-align: left;
+  font-size: 1.8em;
+  color: #e0e0e0;
+}
+
+.profile-page .about-me-content .about-me-block {
+  margin-bottom: 1.5em;
+}
+.profile-page .about-me-content .about-me-block strong {
+  display: block;
+  margin-bottom: 0.5em;
+  color: #00bcd4;
+  font-size: 1.2em;
+}
+.profile-page .about-me-content .about-me-block p {
+  margin-bottom: 0;
+  line-height: 1.7;
+}
+
+
+.profile-page .skills ul {
+  list-style-type: square;
+  padding-left: 20px;
+}
+.profile-page .skills li {
+    margin-bottom: 8px;
+}
+
+
+body.project-page {
+  background-color: #121212;
+  color: #e0e0e0;
+  padding: 20px;
+}
+
+.project-page .container {
+  max-width: 1000px;
+  margin: auto;
+  opacity: 1;
+  transform: translateY(0);
+  animation: none;
+}
+
+.project-page header {
+  text-align: center;
+  margin-bottom: 40px;
+  background: transparent;
+  color: inherit;
+  padding: 0;
+}
+.project-page header h1 {
+    font-size: 2.2em;
+    margin-bottom: 0.2em;
+}
+
+.project-page .highlight {
+  color: #00bcd4;
+}
+
+.project-page .subtitle {
+  color: #aaa;
+  font-size: 1.1em;
+}
+
+.project-page .projects {
+  display: grid;
+  gap: 25px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.project-page .project-card {
+  background-color: #1e1e1e;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+  transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
+}
+
+.project-page .project-card:hover {
+  transform: translateX(-5px) translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6);
+}
+
+.project-page .project-card h2 {
+  margin-bottom: 10px;
+  color: #00bcd4;
+  text-align: left;
+  font-size: 1.5em;
+}
+
+.project-page .project-card p {
+  margin-bottom: 20px;
+  color: #ccc;
+  line-height: 1.7;
+}
+
+.project-page .project-card a:not(.btn) {
+  text-decoration: none;
+  color: #121212;
+  background-color: #00bcd4;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+  display: inline-block;
+}
+.project-page .project-card a:not(.btn):hover {
+  background-color: #4dd0e1;
+}
+
+
+body.contact-page {
+  background-color: #121212;
+  color: #e0e0e0;
+  padding: 20px;
+}
+
+.contact-page .container {
+  max-width: 600px;
+  margin: auto;
+  opacity: 1;
+  transform: translateY(0);
+  animation: none;
+}
+
+.contact-page header {
+  text-align: center;
+  margin-bottom: 30px;
+  background: transparent;
+  color: inherit;
+  padding: 0;
+}
+.contact-page header h1 {
+    font-size: 2.2em;
+    margin-bottom: 0.2em;
+}
+
+.contact-page .highlight {
+  color: #00bcd4;
+}
+
+.contact-page .subtitle {
+  color: #aaa;
+  font-size: 1.1em;
+}
+
+.contact-page .contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-page .contact-form input,
+.contact-page .contact-form textarea {
+  background-color: #1e1e1e;
+  border: 1px solid #444;
+  border-radius: 6px;
+  padding: 12px;
+  color: #e0e0e0;
+  font-size: 1em;
+  font-family: "Segoe UI", sans-serif;
+}
+.contact-page .contact-form input::placeholder,
+.contact-page .contact-form textarea::placeholder {
+    color: #888;
+}
+
+
+.contact-page .contact-form button {
+  background-color: #00bcd4;
+  color: #121212;
+  padding: 12px 20px;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 1em;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.contact-page .contact-form button:hover {
+  background-color: #4dd0e1;
+}
+
+.social {
+  margin-top: 40px;
+  text-align: center;
+}
+.social p {
+    margin-bottom: 15px;
+    font-size: 1.1em;
+}
+
+.social a {
+  margin: 0 12px;
+  color: #00bcd4;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s, transform 0.2s;
+  display: inline-block;
+}
+
+.social a:hover {
+  color: #4dd0e1;
+  transform: translateY(-2px);
+}
+
+
+body.hireme-page {
+  font-family: Arial, sans-serif;
+  background-color: black;
+  padding: 40px;
+  color: #333;
+}
+
+.hireme-page .form-container {
+  background-color: white;
+  padding: 25px 30px;
+  border-radius: 10px;
+  width: 320px;
+  margin: auto;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  border: 2px solid #00bcd4;
+}
+
+.hireme-page .form-container h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 25px;
+  font-size: 1.8em;
+}
+
+.hireme-page label {
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  color: #333;
+  font-weight: bold;
+}
+
+.hireme-page input[type="text"],
+.hireme-page input[type="tel"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: Arial, sans-serif;
+  font-size: 1em;
+}
+
+.hireme-page input[type="submit"] {
+  margin-top: 25px;
+  width: 100%;
+  padding: 12px;
+  background-color: #00bcd4;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1.1em;
+  transition: background-color 0.3s;
+  font-family: Arial, sans-serif;
+}
+
+.hireme-page input[type="submit"]:hover {
+  background-color: #333;
+}
