@@ -1,4 +1,3 @@
-/* Reset and base styles */
 * {
     margin: 0;
     padding: 0;
@@ -30,7 +29,6 @@
     }
   }
   
-  /* Header */
   header {
     background: #333;
     color: #fff;
@@ -74,7 +72,6 @@
     width: 100%;
   }
   
-  /* Sections */
   .section {
     padding: 100px 0; 
     animation: fadeIn 1s ease forwards;
@@ -86,7 +83,6 @@
     font-size: 2rem;
   }
   
-  /* About Section */
   .about-content {
     display: flex;
     flex-wrap: wrap;
@@ -110,8 +106,7 @@
     font-size: 1rem;
     line-height: 1.6;
   }
-  
-  /* Projects */
+
   .project-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -146,7 +141,6 @@
     opacity: 1;
   }
   
-  /* Button */
   .btn {
     display: inline-block;
     margin-top: 15px;
@@ -164,12 +158,10 @@
     box-shadow: 0 6px 15px rgba(0, 119, 204, 0.3);
   }
   
-  /* Contact */
   #contact a {
     font-weight: bold;
   }
   
-  /* Footer */
   footer {
     background: #222;
     color: #fff;
@@ -178,7 +170,6 @@
     margin-top: 40px;
   }
   
-  /* Responsive tweaks */
   @media (max-width: 600px) {
     header h1 {
       font-size: 1.5rem;
